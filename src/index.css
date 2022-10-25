@@ -14,3 +14,7 @@
     @apply cursor-pointer;
   }
 }
+
+.bg-primary {
+  background-color: #0a192f;
+}
