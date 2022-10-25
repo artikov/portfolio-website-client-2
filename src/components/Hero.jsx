@@ -15,10 +15,11 @@ const Hero = () => {
           I am a Full Stack Developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I am an enthusiastic and highly-driven individual, with a strong work
-          ethic and dedication to producing results of the utmost quality. I
-          have strong capabilities in web programming and implementation, based
-          upon organizational talent acquisition needs.
+          I am an enthusiastic and highly-driven individual, with{" "}
+          <span className="font-bold text-xl border-b-2">over 7 years</span> of
+          experience in the sphere. I have strong capabilities in web
+          programming and implementation, based upon organizational talent
+          acquisition needs.
         </p>
         <div>
           <Link to="projects" smooth={true} duration={500}>

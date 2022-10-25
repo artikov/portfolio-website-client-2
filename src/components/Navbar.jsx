@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImProfile } from "react-icons/im";
-
 import { Link } from "react-scroll";
 
 import Logo from "../assets/logo.png";
+import { cv } from "../constants/constants";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -94,7 +94,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/samjot-s-a189831a1/"
+              target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
               <FaLinkedin size={30} />
@@ -103,7 +105,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/seniortechdev"
+              target="_blank"
+              rel="noreferrer"
             >
               Github
               <FaGithub size={30} />
@@ -112,7 +116,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-cyan-800">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto:smjot.singh@gmail.com"
+              target="_blank"
+              rel="noreferrer"
             >
               Email
               <HiOutlineMail size={30} />
@@ -121,7 +127,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href={cv.cv}
+              download="resume"
             >
               Resume
               <ImProfile size={30} />
