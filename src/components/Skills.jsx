@@ -13,7 +13,7 @@ import AWS from "../assets/aws.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-primary text-gray-300 w-full h-screen">
+    <div name="skills" className="bg-primary text-gray-300 w-full">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div>
